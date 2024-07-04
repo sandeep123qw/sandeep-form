@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-container {
+    @apply min-h-screen flex items-center justify-center bg-gray-100 ;
+  }
+  
+  .container {
+    @apply w-full max-w-xl mx-auto bg-white shadow-md rounded p-8;
+  }
+  
+  .nav-tabs {
+    @apply flex justify-between mb-4;
+  }
+  
+  .nav-tabs li {
+    @apply text-orange-500;
+  }
+  
+  .nav-tabs li.active {
+    @apply font-bold;
+  }
+  
+  .nav-tabs li a {
+    @apply text-lg;
+  }
+  
+  .nav-tabs li a:hover {
+    @apply underline;
+  }
+  
+  .nav-tabs li:first-child a {
+    @apply rounded-l-md;
+  }
+  
+  .nav-tabs li:last-child a {
+    @apply rounded-r-md;
+  }
+  .confirmation-container {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .confirmation-enter {
+    opacity: 1;
+  }
+  
+  .confirmation-exit {
+    opacity: 0;
+  }
